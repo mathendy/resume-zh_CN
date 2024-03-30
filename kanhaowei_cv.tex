@@ -1,0 +1,83 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+% \usepackage{minipage}
+\usepackage{wrapfig}
+\usepackage{color}
+\hypersetup{hidelinks,
+colorlinks=true,
+allcolors=black,
+pdfstartview=Fit,
+breaklinks=true}
+
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\begin{figure}[H]
+  \begin{minipage}{.69\textwidth}
+    \name{阚 \ 皓玮}
+    % \newline
+    \vspace{10pt}
+    \newline
+    \basicInfo{ \phone{15155967055} }
+    \newline
+    \basicInfo{ \email{khw1123@mail.ustc.edu.cn}  }
+  \end{minipage}
+  \begin{minipage}{.29\textwidth}
+    \vspace{-5pt}
+    \centering
+    \includegraphics[scale = 1]{avatar.jpg}
+  \end{minipage}
+\end{figure}
+\vspace{-25pt}
+\section{教育经历}
+\datedsubsection{\textbf{中国科学技术大学}}{2020.09 -- 2023.11}
+硕士，计算数学，图形与几何计算实验室(GCL)
+\datedsubsection{\textbf{UW-Madison}}{2019.09 -- 2020.05}
+本科，交换生，数学
+\datedsubsection{\textbf{中国科学技术大学}}{2016.09 -- 2020.06}
+本科，计算数学\textcolor{red}{(绩点、奖项之类的都没用，就省略了)}
+
+\section{项目经历\textcolor{red}{(下面这三个项目稍微包装下都是很好的项目，你先补充，后面我再帮你改，最后按照时间排序下)}}
+\datedsubsection{\textbf{本科 · 独立游戏}}{2018.05 -- 2018.06}
+团队合作使用 Unity 制作仿《黑魂3》游戏，分工完成场景搭建、人物动作交互、ui设计等部分内容，本人负责其中ui设计并帮助完成人物动作交互部分的debug。
+
+\datedsubsection{\textbf{快手 · 图形算法工程师}}{2020.06 -- 2020.08}
+3D 特效编辑器开发，通过跟踪人物表情和手势动作生成特效，主要使用python和lua。
+
+
+\datedsubsection{\textbf{硕士 · 渲染框架}}{2021.06 -- 2021.08}
+使用 OpenGL 搭建渲染框架\textcolor{red}{(补充下细节，渲染流程，与 Unity 的渲染流程相比有什么改进？)}
+
+\datedsubsection{\textbf{硕士 · 毕业设计 · 基于共形映射的虚拟开放场景研究}}{2022.04 -- 2023.05}
+使用基于共形映射的方法进行虚拟场景的导航工作，使得人物可以通过头戴式设备在较小的物理空间内体验较大虚拟空间的真实行走，用于VR游戏中可以提升行走体验
+
+文章被 CAD/CG 会议录用
+
+% \vspace{-25pt}
+\section{校园经历}
+\datedsubsection{\textbf{中国科学技术大学}}{2016.09 -- 2023.11}
+在校期间担任过《计算机程序设计》、《数据结构与数据库》、《计算机图形学》(与 GAMES101 类似)、《数字几何处理》(与 GAMES102 类似)等课程的助教
+
+\section{技能清单}
+\begin{itemize}[parsep=0.5ex]
+  \item 熟悉 CGAL、libigl、OpenGL 等图形学相关的 C++ 库
+  \item 熟练使用 Python
+  \item 可以使用 Unity 进行游戏开发
+  \item 对使用 Blender 进行游戏资产制作 
+  \item 扎实的数理基础，擅长数值计算、最优化、几何处理、物理模拟等
+  \item 较强的编程能力，熟悉数据结构、算法等
+\end{itemize}
+\end{document}
